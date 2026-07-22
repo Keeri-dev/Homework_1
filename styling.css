@@ -1,0 +1,87 @@
+/* Selector Types */
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Class Selectors */
+.tagline {
+    font-style: italic;
+    color: black;
+}
+
+.content-box {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+/* ID Selectors */
+#BakingIsLife {
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+#Struggles {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    background-color: darkgrey;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#BakingEssentials {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    background-color: darkgrey;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    margin-top: 40px;
+    font-size: 14px;
+    color: grey;
+}
