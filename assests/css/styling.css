@@ -1,89 +1,132 @@
-/* Selector Types */
-body {
-    background-color: rgb(152, 151, 151);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
+ /* Selector Types */
+ body {
+     background-color: rgb(152, 151, 151);
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 20px;
+ }
 
-h1,
-h2,
-h3 {
-    color: darkblue;
-    text-align: center;
-}
+ h1,
+ h2,
+ h3 {
+     color: darkblue;
+     text-align: center;
+ }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
+ p {
+     font-size: 16px;
+     line-height: 1.5;
+     color: #333;
+ }
 
-/* Class Selectors */
-.tagline {
-    font-style: italic;
-    color: black;
-}
+ /* Class Selectors */
+ .tagline {
+     font-style: italic;
+     color: black;
+ }
 
-.content-box {
-    border: 1.5px solid black;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-}
+ .content-box {
+     border: 1.5px solid black;
+     padding: 15px;
+     margin-bottom: 20px;
+     background-color: whitesmoke;
+ }
 
-/* ID Selectors */
-#BakingIsLife {
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    background-color: darkgrey;
-    padding: 10px;
-}
+ /* ID Selectors */
+ #BakingIsLife {
+     font-weight: bold;
+     color: black;
+     text-transform: uppercase;
+     background-color: darkgrey;
+     padding: 10px;
+ }
 
-#Struggles {
-    font-size: 14px;
-    color: black;
-    text-transform: uppercase;
-    background-color: darkgrey;
-    padding: 10px;
-    margin-top: 10px;
-}
+ #Struggles {
+     font-size: 14px;
+     color: black;
+     text-transform: uppercase;
+     background-color: darkgrey;
+     padding: 10px;
+     margin-top: 10px;
+ }
 
-#BakingEssentials {
-    font-size: 14px;
-    color: black;
-    text-transform: uppercase;
-    background-color: darkgrey;
-    padding: 10px;
-    margin-top: 10px;
-}
+ #BakingEssentials {
+     font-size: 14px;
+     color: black;
+     text-transform: uppercase;
+     background-color: darkgrey;
+     padding: 10px;
+     margin-top: 10px;
+ }
 
-/* Navigation Styling */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: purple;
-    margin-bottom: 20px;
-}
+ /* Navigation Styling */
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     background-color: purple;
+     margin-bottom: 20px;
+     flex-wrap: wrap;
+ }
 
-nav li {
-    display: inline;
-    margin-right: 15px;
-    color: black;
-    font-weight: bold;
-}
+ nav li {
+     display: inline;
+     margin-right: 15px;
+     color: black;
+     font-weight: bold;
+ }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: purple;
-    margin-top: 40px;
-    font-size: 14px;
-    color: grey;
-    border-top: 1px solid black;
-    font-weight: bold;
-}
+ /* Footer Styling */
+ footer {
+     text-align: center;
+     padding: 10px;
+     background-color: purple;
+     margin-top: 40px;
+     font-size: 14px;
+     color: grey;
+     border-top: 1px solid black;
+     font-weight: bold;
+ }
+
+ /* Responsive Image */
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ /* Flex Layout */
+ main {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ main section {
+     flex: 1;
+     min-width: 250px;
+ }
+
+ /* Tablet View */
+ @media (min-width: 768px) {
+     main {
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+
+     main section {
+         flex: 1 1 45%;
+     }
+ }
+
+ /* Desktop View */
+ @media (min-width: 1200px) {
+     main {
+         max-width: 1200px;
+         margin: 0 auto;
+     }
+
+     main section {
+         flex: 1 1 30%;
+     }
+ }
