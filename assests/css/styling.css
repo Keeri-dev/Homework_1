@@ -75,6 +75,7 @@
      margin-right: 15px;
      color: black;
      font-weight: bold;
+     overflow-wrap: break-word;
  }
 
  /* Footer Styling */
